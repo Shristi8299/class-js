@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img1 ,#img2{
+            width:200px; 
+             height: 100px;
+        }
+        #btn{
+            width:90px;
+            height: 35px;
+            background-color: aqua;
+            border-radius: 5px ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Swaping images</h1>
+    <img src="images/1.avif" alt="" id="img1"> &nbsp;&nbsp;&nbsp;
+    <img src="images/3.avif" alt="" id="img2">
+    <br><br><br>
+    <input type="button" id="btn" value="swap" onclick="swap()">
+    <script>
+        function swap(){
+        let image1 = document.querySelector("#img1");
+        let image2 = document.querySelector("#img2");
+        let temp = image1.src;
+        image1.src =image2.src;
+        image2.src = temp;
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img{
+            height: 200px;
+            width:400px;
+        }
+        #btn{
+            background-color: green;
+            color:white;
+            border-radius: 5px;
+            height: 40px;
+            width: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+     <h1>some beautiful images</h1>
+     <img src="images/1.avif" alt="" id="img">
+     <br><br><br>
+     <input id="btn"type="button" value="CHANGE" onclick="change()">
+     <script>
+        const images = ["images/1.avif" ,"images/2.avif" ,"images/3.avif" ,"images/4.avif" ];
+        let currentIndex = 0;
+    function change(){
+        currentIndex++;
+        if(currentIndex>=images.length){
+            currentIndex = 0;
+        }
+        document.querySelector("#img").src = images[currentIndex] ;
+
+    }
+      </script>
+</body>
+</html>

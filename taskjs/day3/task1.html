@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="value1" id="input1"><br><br><br>
+    <input type="number" placeholder="value2" id="input2"><br><br><br>
+    <input type="button " value="+" onclick="add()"><br><br>
+    <input type="button" value="-" onclick="sub()"><br><br> 
+    <input type="button" value="*" onclick="mul()"><br><br>
+    <input type="button " value="/" onclick="div()"><br><br>
+    <span>Ans =</span><span id="ans">.............</span>
+    <script>
+        function add(){
+         let input1 = document.querySelector("#input1").value;
+         let input2 = document.querySelector("#input2").value;
+         let result = parseInt(input1)+parseInt(input2);
+         let ans = document.querySelector("#ans");
+         ans.innerHTML = result;
+        }
+        function sub(){
+         let input1 = document.querySelector("#input1").value;
+         let input2 = document.querySelector("#input2").value;
+         let result = parseInt(input1)-parseInt(input2);
+         let ans = document.querySelector("#ans");
+         ans.innerHTML = result;
+
+        }
+        function mul(){
+         let input1 = document.querySelector("#input1").value;
+         let input2 = document.querySelector("#input2").value;
+         let result = parseInt(input1)* parseInt(input2);
+         let ans = document.querySelector("#ans");
+         ans.innerHTML = result;
+
+        }
+        function div(){
+         let input1 = document.querySelector("#input1").value;
+         let input2 = document.querySelector("#input2").value;
+         let result = parseInt(input1) / parseInt(input2);
+         let ans = document.querySelector("#ans");
+         ans.innerHTML = result;
+
+        }
+        
+    </script>
+</body>
+</html>

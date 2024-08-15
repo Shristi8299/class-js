@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #btn{
+            background-color: green;
+            color:white;
+            border-radius: 5px;
+            height: 40px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Applying css on the image </h1>
+    <img src="images/1.avif" alt="" id="img">
+    <br><br><br>
+    <input type="button" value="style" onclick="apply()" id="btn">
+    <script>
+        function apply(){
+            let image = document.querySelector("#img");
+            image.style.width = "500px";
+            image.style.heigth=  "200px";
+            image.style.border = "10px solid aqua";
+            image.style.borderRadius = "5px"; 
+        }
+    </script>
+</body>
+</html>
