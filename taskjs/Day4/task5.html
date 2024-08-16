@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="font-size: 50px; margin: 0px auto; font-weight: bold; color:red">It is disappear after 4 seconds so count 4 sec to see the magic</h1>
+    <script>
+        setTimeout(()=>{
+            let h1 = document.querySelector("h1");
+            h1.style.display = "none";
+        } ,4000);
+    </script>
+</body>
+</html>

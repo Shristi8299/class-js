@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hii Every One</h1>
+    <h1>I will change the color of all the text to blue after 4 sec let's see</h1>
+    <script>
+        setTimeout(()=>{
+            let h1 = document.querySelectorAll("h1");
+            h1.forEach(h1=>{
+                h1.style.color = "blue";
+            })},4000);
+    </script>
+</body>
+</html>
