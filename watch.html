@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 style="text-align: center; font-size: 50px;">Digital watch</h1>
+    <html>
+<head>
+<style>
+.outer{
+height:315px;
+width:600px;
+margin:100px auto;
+background:whtie;
+}
+#s{
+    height:15px;
+    width: 600px;
+    background-color:black;
+}
+#box{
+height:300px;
+width:600px;
+border:20px solid #303032;
+background:#585d60;
+border-radius:40px;
+font-size:110px;
+color:black;
+box-shadow:0px 0px 8px 8px black inset,-5px -5px 25px 2px #303032;
+line-height:300px;
+text-align:center;
+
+}
+.a{
+font-size:30px;
+color:#071d2b;
+}
+.b{
+height:30px;
+width:600px;
+}
+.b1{
+height:15px;
+width:200px;
+float:left;
+
+}
+.b2{
+height:20px;
+width:250px;
+background:black;
+float:left;
+box-shadow:0px 0px 5px 4px black ;
+}
+</style>
+</head>
+<body>
+<div class="outer">
+<div id="box">Hello</div>
+<div class="b">
+<div class="b1"></div>
+<div class="b2"></div>
+<div class="b1"></div>
+</div>
+<div id="s"></div>
+<script>
+    function watch(){
+        let time = new Date();
+        let formateDate = time.toLocaleTimeString();
+        document.querySelector("#box").innerHTML = formateDate;
+    }
+    
+    setInterval(watch,1000);
+</script>
+</body>
+</html>
+</body>
+</html>
